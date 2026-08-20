@@ -40,6 +40,6 @@ policy document" principle, made concrete.
 
 This is not a production application. There's no auth, no real backend, no
 deployment config beyond CI running its checks. It's the scaffolding a real
-internal tool would be forked from — see `docs/PROMOTION.md` for what has to
+internal tool would be forked from - see `docs/PROMOTION.md` for what has to
 be added before something built on this template is allowed to touch real
 data.
