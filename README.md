@@ -2,8 +2,7 @@
 
 A small, working reference repo accompanying Soal Labs' Task 3 deep-dive
 ("Beyond the Harness: SDLC for Citizen Development"). It implements the five
-SDLC building blocks the write-up describes — running, not just described —
-around a deliberately trivial one-page app.
+SDLC building blocks the write-up describes around a deliberately trivial one-page app.
 
 **Start with [`AGENTS.md`](./AGENTS.md).** That's the file an AI coding
 harness (or a human) reads first, and it explains the one enforced rule this
