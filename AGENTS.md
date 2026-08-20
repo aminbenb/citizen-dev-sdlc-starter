@@ -1,9 +1,8 @@
 # AGENTS.md — read this before touching anything in this repo
 
-This file is the project-level context file described in Soal Labs' Task 3
-deep-dive ("Beyond the Harness: SDLC for Citizen Development"). Every AI
-coding harness — Claude Code, Cursor, GitHub Copilot's agent mode — reads a
-file like this before your first prompt. This is that file for this repo.
+This file is the project-level context file described in ("Beyond the Harness: SDLC for Citizen Development"). 
+Every AI coding harness — Claude Code, Cursor, GitHub Copilot's agent mode — reads a
+file like this before a first prompt. This is that file for this repo.
 If you are a human contributor, read it too; the rules are the same for you.
 
 ## What this repo is
