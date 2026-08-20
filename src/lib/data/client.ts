@@ -37,8 +37,7 @@ const MOCK_DEALS: Deal[] = [
   },
 ];
 
-// Simulates real network latency so loading states in the UI are genuine,
-// not decorative.
+// Simulates real network latency
 function delay<T>(value: T, ms = 150): Promise<T> {
   return new Promise((resolve) => setTimeout(() => resolve(value), ms));
 }
