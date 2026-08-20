@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  gates:
+    name: lint, typecheck, test, secret-scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      - name: Scan for secrets
+        run: npm run scan-secrets
+
+  # These run server-side, independent of anyone's local hooks, specifically
+  # so `git commit --no-verify` or a skipped pre-push hook doesn't mean a
+  # skipped gate. A PR can't merge unless this job is green — see
+  # branch protection notes in docs/PROMOTION.md.

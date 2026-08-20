@@ -1,0 +1,19 @@
+# Every PR against this repo (and anything forked from it that keeps this
+# file) gets an automatic review request to the platform engineering
+# function. See docs/PROMOTION.md for what that review actually checks.
+#
+# Replace this with the real team/handle when this template is forked for
+# an actual internal tool.
+
+*                           @platform-engineering-team
+
+# The shared data layer is the highest-leverage file in the repo — changes
+# here affect every feature built on top of it, so it gets an extra look.
+/src/lib/data/              @platform-engineering-team
+
+# Loosening any of these gates is itself a decision the platform team should
+# see, not something that should happen inside an unrelated feature PR.
+/eslint.config.js           @platform-engineering-team
+/.github/workflows/         @platform-engineering-team
+/.husky/                    @platform-engineering-team
+/scripts/scan-secrets.mjs   @platform-engineering-team
