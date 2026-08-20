@@ -1,7 +1,7 @@
 # Citizen Dev SDLC Starter
 
-A small, working reference repo accompanying the Beyond the Harness Training Deck. It implements the five
-SDLC building blocks the write-up describes around a deliberately trivial one-page app.
+A small, working reference repo accompanying the Beyond the Harness presentation. 
+It implements the five SDLC building blocks the write-up describes around a deliberately trivial one-page app.
 
 **Start with [`AGENTS.md`](./AGENTS.md).** That's the file an AI coding
 harness (or a human) reads first, and it explains the one enforced rule this
