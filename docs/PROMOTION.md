@@ -1,15 +1,10 @@
 # Promotion pathway: prototype → reviewed → production
 
-This is the fifth SDLC building block from the Task 3 deep-dive: a defined
-path from "an associate built this over a weekend" to "the firm runs this."
-Skipping this step is how a firm ends up with three overlapping email
-workflow tools and nobody who can say which one is current.
-
 ## Stage 1 — Prototype
 
 Anyone can get here. Fork this template, build against the mock data layer,
 iterate freely. Nothing at this stage touches real firm data or a real
-deployment. There is no review gate, on purpose — the entire value of citizen
+deployment. There is no review gate, on purpose - the entire value of citizen
 development is speed at this stage, and slowing it down here defeats the
 point.
 
