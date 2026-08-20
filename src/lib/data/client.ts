@@ -35,6 +35,13 @@ const MOCK_DEALS: Deal[] = [
     stage: "Screening",
     requestedAmount: 45_000_000,
   },
+  {
+    id: "amin",
+    name: "Amin",
+    sponsor: "Amin",
+    stage: "Sourced",
+    requestedAmount: 10_000_000,
+  },
 ];
 
 // Simulates real network latency
