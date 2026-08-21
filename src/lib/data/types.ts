@@ -12,13 +12,3 @@ export interface Deal {
   stage: DealStage;
   requestedAmount: number;
 }
-
-export type PortfolioCompanyStatus = "Active" | "Under Review" | "Exited";
-
-export interface PortfolioCompany {
-  id: string;
-  name: string;
-  sector: string;
-  status: PortfolioCompanyStatus;
-  ownershipPercent: number;
-}
