@@ -11,7 +11,7 @@
 // does. That indirection is the point: it's what makes the vendor/backend
 // swappable without rewriting every feature built on top of it.
 
-import type { Deal } from "./types";
+import type { Deal, PortfolioCompany } from "./types";
 
 const MOCK_DEALS: Deal[] = [
   {
@@ -37,6 +37,30 @@ const MOCK_DEALS: Deal[] = [
   },
 ];
 
+const MOCK_PORTFOLIO_COMPANIES: PortfolioCompany[] = [
+  {
+    id: "brightwell",
+    name: "Brightwell Logistics",
+    sector: "Transportation",
+    status: "Active",
+    ownershipPercent: 62,
+  },
+  {
+    id: "harborview",
+    name: "Harborview Diagnostics",
+    sector: "Healthcare",
+    status: "Active",
+    ownershipPercent: 48,
+  },
+  {
+    id: "pinnacle",
+    name: "Pinnacle Metal Works",
+    sector: "Industrials",
+    status: "Under Review",
+    ownershipPercent: 71,
+  },
+];
+
 // Simulates real network latency
 function delay<T>(value: T, ms = 150): Promise<T> {
   return new Promise((resolve) => setTimeout(() => resolve(value), ms));
@@ -50,4 +74,14 @@ export async function getDeals(): Promise<Deal[]> {
 
 export async function getDeal(id: string): Promise<Deal | undefined> {
   return delay(MOCK_DEALS.find((d) => d.id === id));
+}
+
+export async function getPortfolioCompanies(): Promise<PortfolioCompany[]> {
+  return delay(MOCK_PORTFOLIO_COMPANIES);
+}
+
+export async function getPortfolioCompany(
+  id: string,
+): Promise<PortfolioCompany | undefined> {
+  return delay(MOCK_PORTFOLIO_COMPANIES.find((c) => c.id === id));
 }
