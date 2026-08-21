@@ -10,28 +10,6 @@ body {
   padding: 32px;
 }
 
-.app-nav {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-
-.app-nav-link {
-  font: inherit;
-  background: none;
-  border: 1px solid rgba(11, 11, 11, 0.15);
-  border-radius: 6px;
-  padding: 6px 12px;
-  cursor: pointer;
-  color: #52514e;
-}
-
-.app-nav-link.active {
-  background: #0b0b0b;
-  border-color: #0b0b0b;
-  color: #fcfcfb;
-}
-
 .deal-list {
   display: flex;
   flex-direction: column;
